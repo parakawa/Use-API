@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>YouTube search</title>
+	<style>
+	.video-search-form {
+		margin: 1em 0;
+	}
+	</style>
+</head>
+<body class="yt-search">
+	<h2>Search YouTube</h2>
+	<form class="video-search-form">
+		<input type="text" name="query">
+		<button>Search</button>
+	</form>
+
+	<button class="prev-page" hidden>Previous page</button>
+	<button class="next-page" hidden>Next page</button>
+	<ol class="video-results"></ol>
+	<button class="prev-page" hidden>Previous page</button>
+	<button class="next-page" hidden>Next page</button>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
