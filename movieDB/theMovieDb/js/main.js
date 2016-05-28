@@ -1,6 +1,6 @@
 // Function for calling the Now Showing Movie API 
 
-function NowShowing(title,filter) {
+function Filtrado(title,filter) {
     var xhr = new XMLHttpRequest();
     var data = [];
     document.getElementById("result").innerHTML = title;

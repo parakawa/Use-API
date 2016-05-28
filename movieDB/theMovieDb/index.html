@@ -1,18 +1,18 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="css/bootstrap.min.css"><style>
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title></title><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="css/bootstrap.css"><style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
 
             }
-        </style><link rel="stylesheet" href="css/bootstrap-theme.min.css"><link rel="stylesheet" href="css/main.css"><script src="js/main.js"></script></head><body><div class="container">
+        </style><link rel="stylesheet" href="css/main.css"><script src="js/main.js"></script></head><body><div class="container">
 <!-- Example row of columns -->
 <div class="row">
     <div class="col-md-12">
         <div class="form-group">
-            <a class="btn btn-default" href="#" role="button" onclick="NowShowing("Popular","popular")">Popular</a>
-            <a class="btn btn-default" href="#" role="button" onclick="TopRated()">Top Rated</a>
-            <a class="btn btn-default" href="#" role="button" onclick="upComming()">Upcoming</a>
-            <a class="btn btn-default btn-inline" href="#" role="button" onclick="NowShowing()">Now Playing</a>
+            <a class="btn btn-default" href="#" role="button" onclick="Filtrado('Lo más popular','popular')">Popular</a>
+            <a class="btn btn-default" href="#" role="button" onclick="Filtrado('En el TOP','top_rated')">Top Rating</a>
+            <a class="btn btn-default" href="#" role="button" onclick="Filtrado('Próximamente','upcoming')">Próximamente</a>
+            <a class="btn btn-default btn-inline" href="#" role="button" onclick="Filtrado('En Cartelera','now_playing')">En Cartelera</a>
         </div>
         <h2 id="result">Now Showing</h2>
     </div>
@@ -23,7 +23,7 @@
             <div tabindex="2" id="moviePosters"></div>
         </div>
     </div>
-</div></div><!-- /container --><script src="js/vendor/bootstrap.min.js"></script></body><script type="text/javascript">
+</div></div></body><script type="text/javascript">
         window.onload = baseUrl_Image();
-         window.onload = NowShowing("Popular","popular");
+         window.onload = Filtrado("Popular","popular");
          </script></html>
